@@ -1,0 +1,27 @@
+<div class="row">
+    {{#each notes}}
+    <div class="col-md-3">
+        <div class="card" id="all-notes">
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{title}} <a href="/notes/edit/{{_id}}"><i class="fa fa-pencil"></i></a>
+                </h4>
+                <p>{{description}}</p>
+                <form action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger btn-block btn-sm">Borrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{#if notes}}
+{{else}}
+<div id="home-about" class="jumbotron mt-4">
+    <h1 class="display-4">Ups! no hay notas creadas</h1>
+    <p class="lead">Para crear su primer nota toque el boton de abajo ó haga click en "Notas" ubicado en la parte superior derecha.</p>
+    <hr class="my-4">
+    <a href="/notes/add" class="btn btn-primary">Crear una nota</a>
+</div>
+{{/if}}

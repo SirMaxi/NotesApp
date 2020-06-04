@@ -1,0 +1,2 @@
+Esta carpeta sirve para colocar algunas funciones que desde las vistas hagan algo, por ejemplo handlebars no tiene una especie de bucles, si queremos crear eso, 
+podemos hacerlo desde estos helpers

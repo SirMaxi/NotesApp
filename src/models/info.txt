@@ -1,0 +1,1 @@
+Esta carpeta es para almacenar los modelos de datos, osea los esquemas que vamos a utilizar en la base de datos en mongoDB

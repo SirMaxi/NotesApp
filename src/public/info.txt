@@ -1,0 +1,1 @@
+Esta carpeta nos va a servir para colocar archivos publicos, archivos estaticos que podrian ser css, imagenes, fuentes, o cualquier otro archivo que el navegador pueda acceder

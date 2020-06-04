@@ -1,0 +1,1 @@
+Esta carpeta es para almacenar las funciones que vamos a estar utilizando cuando un usuario este visitando una ruta de nuestro servidor

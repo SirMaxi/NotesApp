@@ -1,0 +1,1 @@
+Esta carpeta nos va a servir para guardar los archivos de handlebars o los archivos HTML que vamos a estar enviando al navegador
