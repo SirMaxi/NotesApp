@@ -11,6 +11,12 @@ usersCtrl.signup = async (req, res) => {
     let errors = [];
 
     const {name, email, password, confirm_password} = req.body;
+    if(name.length < 1){
+        errors.push({text: 'El campo nombre no puede estar vacio.'});
+    }
+    if(email.length < 1){
+        errors.push({text: 'El campo email no puede estar vacio.'});
+    }
     if(password != confirm_password) {
         errors.push({text: 'Las contraseñas no coinciden'});
     }
